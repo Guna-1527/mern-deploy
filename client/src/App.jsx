@@ -5,7 +5,7 @@ const App = () => {
     const [Message, SetMessage] = useState();
 
     useEffect(() => {
-        axios.get("http://localhost:4000").then((res) => {
+        axios.get("https://mern-deploy-back-kmun.onrender.com/").then((res) => {
             SetMessage(res.data);
             console.log(res.data);
         });
